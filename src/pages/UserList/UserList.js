@@ -7,8 +7,10 @@ import { IoTrashOutline } from "react-icons/io5";
 export default function UserList() {
   return (
     <div>
-      <Container fluid>
+<Container >
+      <Container fluid >
         <Row id="user_list4">
+          <Col>
           <Table style={{ marginTop: "1rem" }}>
             <thead>
               <tr id="user_list1">
@@ -112,7 +114,9 @@ export default function UserList() {
               
             </tbody>
           </Table>
+          </Col>
         </Row>
+      </Container>
       </Container>
     </div>
   );

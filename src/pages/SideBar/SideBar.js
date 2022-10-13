@@ -20,7 +20,8 @@ function Side() {
               style={{ backgroundColor: "aliceblue", paddingTop: "2rem" }}
             >
               <Routes>
-                <Route path="dashboard" element={<Dashboard />} />
+                <Route path="/"  element={<Dashboard />} />
+                <Route path="dashboard"  element={<Dashboard />} />
                 <Route path="patholab" element={<PatholabList />} />
                 <Route path="userlist" element={<UserList />} />
               </Routes>
