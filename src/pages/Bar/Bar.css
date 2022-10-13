@@ -1,0 +1,16 @@
+#bar1{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+#bar2{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+
+}
+#bar4{
+    width: 65%;
+    
+}

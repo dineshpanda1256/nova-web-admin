@@ -1,0 +1,66 @@
+#user_list1 {
+  background-color: #eff0f4;
+  font-family: "Poppins";
+  text-align: center;
+}
+#user_list2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+#user_list3 {
+  border-radius: 1.5rem;
+  margin-right: 1rem;
+}
+td {
+  border: none;
+}
+th {
+  border: none;
+}
+
+#user_list_icon1 {
+  color: #5aa644;
+  margin-top: 1rem;
+}
+#user_list_body {
+  background-color: white;
+  font-family: "Poppins";
+  text-align: center;
+}
+#user_list4 {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);-webkit-box-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 0.6rem;
+  padding: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+#user_list5 {
+  background-color: white;
+  border-radius: 1.5rem;
+}
+#user_list_number {
+  font-size: 0.8rem;
+  color: #5aa644;
+  text-align: start;
+  font-family: 'Poppins';
+}
+#user_list_name {
+  text-align: start;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Poppins';
+}
+#user_list6{
+    /* margin-bottom: 1rem;
+    margin-top: 1rem; */
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
