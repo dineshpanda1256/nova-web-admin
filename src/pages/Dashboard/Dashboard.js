@@ -5,11 +5,23 @@ import Dashboardcomp from '../../Component/Dashboardcomp/Dashboardcomp'
 import Dashboardteamcard from '../../Component/Dashboardteamcard/Dashboardteamcard'
 import Requestable from '../../Component/Requestable/Requestable'
 import Revenuecard from '../../Component/Revenuecard/Revenuecard'
+import NavBar from '../NavBar/NavBar'
 import "./Dashboard.css"
 export default function Dashboard() {
   return (
+    <>
+    
     <div id='dashboard_maincontainer'>
+      <Container fluid>
+        <Row>
+        
+        <Col><NavBar/></Col>
+
+        </Row>
+      </Container>
+       
        <Container fluid>
+       
 <Row>
 
   <Col>
@@ -47,5 +59,6 @@ export default function Dashboard() {
         </Row>
        </Container>
     </div>
+    </>
   )
 }

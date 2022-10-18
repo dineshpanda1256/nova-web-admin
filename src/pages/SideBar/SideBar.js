@@ -9,6 +9,7 @@ function Side() {
   return (
     <div>
       <Container fluid>
+        
         <Router>
           <Row>
             <Col md="2" xs="3">
