@@ -5,10 +5,27 @@ import { AiFillStar } from 'react-icons/ai';
 import { TbEdit } from 'react-icons/tb';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import sag from '../../asset/sagarika.png';
+import NavBar2 from '../NavBar2/NavBar2';
+import Button from 'react-bootstrap/Button';
+import AddPatholabModal from '../../Component/AddPatholabModal/AddPatholabModal';
+import { Link } from "react-router-dom";
+import Slidebar from "../Bar/Bar";
+import PatholabDetail from "../PatholabDetail/PatholabDetail";
+
 
 export default function PatholabList() {
+    const [modalShow, setModalShow] = React.useState(false);
     return (
         <div>
+            <Container >
+        <Row >
+           
+          <Col>
+          <NavBar2/>  </Col>
+       
+        </Row>
+      </Container>
+
             <Container fluid id="mainBody">
                 <Row className='d-flex align-items-center mb-4 '>
                     <Col md={1} xs={3} className="d-flex justify-content-center" style={{padding: '0px'}}>
@@ -25,7 +42,11 @@ export default function PatholabList() {
                         </Form>
                     </Col>
                     <Col md={1} xs={3} style={{padding: '0px'}}>
-                        <button type="button" className="btn btn-success" id="addBtn">Add</button>
+                        <Button type="button" onClick={() => setModalShow(true)} className="btn btn-success" id="addBtn">Add</Button>
+                        <AddPatholabModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
                     </Col>
                 </Row>
 
@@ -47,12 +68,14 @@ export default function PatholabList() {
                         <tbody>
 
                             {/* 1st row */}
-                            <tr id="tableDatas">
+                            
+                            <tr  id="tableDatas" >
+                            
                                 <td id="tDatas1">
                                     <div id="nameWithPhoto">
-                                    <div><Image id="nameWithPhoto2" src={sag} /></div>
+                                    <div> <Link to="/list"><Image id="nameWithPhoto2" src={sag} /></Link></div>
                                     <div>
-                                        <div id="pathologyNameTxt">LongLife Pathology Labs</div>
+                                        <div id="pathologyNameTxt"> <Link  id="pathologyNameTxt" to="/list">LongLife Pathology Labs </Link></div>
                                         <div id="phnNumbTxt">+919876543210</div>
                                     </div>
                                     </div>

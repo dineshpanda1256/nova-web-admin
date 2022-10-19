@@ -73,6 +73,7 @@
     justify-content: center;
     /* border: 0px; */
     margin: 0rem;
+    text-decoration: none;
     
 }
 
@@ -97,6 +98,7 @@
     font-size: 0.9rem;
     color: #192A3E;
     text-align: start;
+    text-decoration: none;
 }
 
 #phnNumbTxt {
@@ -108,6 +110,7 @@
     letter-spacing: 0.01em;
     color: #5AA644;
     text-align: start;
+    text-decoration: none;
 }
 
 #starIcon {

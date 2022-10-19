@@ -12,7 +12,7 @@ export default function Dashboard() {
     <>
     
     <div id='dashboard_maincontainer'>
-      <Container fluid>
+      <Container >
         <Row>
         
         <Col><NavBar/></Col>

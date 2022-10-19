@@ -4,6 +4,7 @@ import UserList from "../UserList/UserList";
 import { Col, Container, Row } from "react-bootstrap";
 import Dashboard from "../Dashboard/Dashboard";
 import PatholabList from "../Patholab/Patholab";
+import PatholabDetail from "../PatholabDetail/PatholabDetail";
 
 function Side() {
   return (
@@ -25,6 +26,8 @@ function Side() {
                 <Route path="dashboard"  element={<Dashboard />} />
                 <Route path="patholab" element={<PatholabList />} />
                 <Route path="userlist" element={<UserList />} />
+                <Route path="list" element={<PatholabDetail />} />
+
               </Routes>
             </Col>
           </Row>

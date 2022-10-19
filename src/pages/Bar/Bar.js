@@ -21,7 +21,7 @@ const Slidebar = () => {
     <div
       style={{ display: "flex", height: "100vh", overflow: "scroll initial" }}
     >
-      <CDBSidebar id="bar3" textColor="black" backgroundColor="white">
+      <CDBSidebar id="bar3" textColor="black" backgroundColor="white"  width="5rem">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a
             href="/"
@@ -73,6 +73,7 @@ const Slidebar = () => {
                 <div id="bar1" style={select === 'user' ? {color: 'green'} : {color: 'black'} }> User</div>
               </CDBSidebarMenuItem>
             </NavLink>
+
           </CDBSidebarMenu>
         </CDBSidebarContent>
       </CDBSidebar>
